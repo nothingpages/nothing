@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Nothingpages — A Brand About Nothing</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@200;300;400;500&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@200;300;400;500&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -25,32 +25,10 @@
       font-family: 'Urbanist', sans-serif;
       font-style: normal;
       overflow-x: hidden;
-      cursor: none;
+      cursor: auto;
     }
 
     em, i { font-style: normal; }
-
-    .cursor {
-      position: fixed;
-      width: 8px; height: 8px;
-      background: var(--black);
-      border-radius: 50%;
-      pointer-events: none;
-      z-index: 9999;
-      transition: transform 0.15s ease;
-      transform: translate(-50%, -50%);
-    }
-    .cursor-ring {
-      position: fixed;
-      width: 32px; height: 32px;
-      border: 1px solid var(--black);
-      border-radius: 50%;
-      pointer-events: none;
-      z-index: 9998;
-      transition: transform 0.35s ease, opacity 0.3s;
-      transform: translate(-50%, -50%);
-      opacity: 0.4;
-    }
 
     body::before {
       content: '';
@@ -86,7 +64,7 @@
       animation: fadeIn 1.2s ease 0.5s forwards;
     }
     .nav-links a {
-      font-family: 'Courier Prime', monospace;
+      font-family: 'Urbanist', sans-serif;
       font-size: 0.65rem;
       letter-spacing: 0.2em;
       text-transform: uppercase;
@@ -107,7 +85,7 @@
       position: relative;
     }
     .hero-eyebrow {
-      font-family: 'Courier Prime', monospace;
+      font-family: 'Urbanist', sans-serif;
       font-size: 0.65rem;
       letter-spacing: 0.35em;
       text-transform: uppercase;
@@ -144,7 +122,7 @@
       bottom: 2.5rem;
       left: 50%;
       transform: translateX(-50%);
-      font-family: 'Courier Prime', monospace;
+      font-family: 'Urbanist', sans-serif;
       font-size: 0.6rem;
       letter-spacing: 0.3em;
       text-transform: uppercase;
@@ -171,7 +149,7 @@
       text-align: center;
     }
     .manifesto-label {
-      font-family: 'Courier Prime', monospace;
+      font-family: 'Urbanist', sans-serif;
       font-size: 0.6rem;
       letter-spacing: 0.35em;
       text-transform: uppercase;
@@ -191,7 +169,7 @@
 
     .pillars { padding: 6rem 2rem 10rem; max-width: 1100px; margin: 0 auto; }
     .pillars-label {
-      font-family: 'Courier Prime', monospace;
+      font-family: 'Urbanist', sans-serif;
       font-size: 0.6rem;
       letter-spacing: 0.35em;
       text-transform: uppercase;
@@ -202,7 +180,7 @@
     .pillars-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 0; }
     .pillar { border-top: 1px solid var(--faint); padding: 3rem 2rem 3rem 0; }
     .pillar-num {
-      font-family: 'Courier Prime', monospace;
+      font-family: 'Urbanist', sans-serif;
       font-size: 0.6rem;
       color: var(--accent);
       letter-spacing: 0.2em;
@@ -233,7 +211,7 @@
       pointer-events: none;
     }
     .social-label {
-      font-family: 'Courier Prime', monospace;
+      font-family: 'Urbanist', sans-serif;
       font-size: 0.6rem;
       letter-spacing: 0.35em;
       text-transform: uppercase;
@@ -245,7 +223,7 @@
     .social-sub { font-size: 1.1rem; color: var(--grey); margin-bottom: 4rem; font-weight: 300; font-style: normal; }
     .social-channels { display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 3rem; }
     .channel-tag {
-      font-family: 'Courier Prime', monospace;
+      font-family: 'Urbanist', sans-serif;
       font-size: 0.65rem;
       letter-spacing: 0.2em;
       text-transform: uppercase;
@@ -271,7 +249,7 @@
 
     .content-section { padding: 10rem 2rem; max-width: 900px; margin: 0 auto; }
     .content-label {
-      font-family: 'Courier Prime', monospace;
+      font-family: 'Urbanist', sans-serif;
       font-size: 0.6rem;
       letter-spacing: 0.35em;
       text-transform: uppercase;
@@ -290,7 +268,7 @@
     }
     .post-item:hover { padding-left: 1rem; }
     .post-platform {
-      font-family: 'Courier Prime', monospace;
+      font-family: 'Urbanist', sans-serif;
       font-size: 0.55rem;
       letter-spacing: 0.2em;
       text-transform: uppercase;
@@ -307,7 +285,7 @@
     .cta-heading .dim { color: var(--grey); }
     .cta-btn {
       display: inline-block;
-      font-family: 'Courier Prime', monospace;
+      font-family: 'Urbanist', sans-serif;
       font-size: 0.65rem;
       letter-spacing: 0.25em;
       text-transform: uppercase;
@@ -332,7 +310,7 @@
     .cta-btn:hover::after { transform: scaleX(1); }
     .cta-sub {
       margin-top: 1.5rem;
-      font-family: 'Courier Prime', monospace;
+      font-family: 'Urbanist', sans-serif;
       font-size: 0.6rem;
       letter-spacing: 0.2em;
       color: var(--grey);
@@ -350,7 +328,7 @@
     }
     .footer-logo svg { height: 14px; width: auto; display: block; }
     .footer-tagline { font-size: 0.85rem; font-weight: 300; font-style: normal; color: var(--grey); }
-    .footer-copy { font-family: 'Courier Prime', monospace; font-size: 0.55rem; letter-spacing: 0.15em; color: var(--grey); text-transform: uppercase; }
+    .footer-copy { font-family: 'Urbanist', sans-serif; font-size: 0.55rem; letter-spacing: 0.15em; color: var(--grey); text-transform: uppercase; }
 
     @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
     @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
@@ -379,9 +357,6 @@
   </style>
 </head>
 <body>
-  <div class="cursor" id="cursor"></div>
-  <div class="cursor-ring" id="cursorRing"></div>
-
   <nav>
     <a href="#" class="nav-logo">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10415 1445" style="fill:#0e0e0e">
@@ -461,10 +436,11 @@
     <h2 class="social-heading reveal">Follow us<br><span class="dim">for nothing</span></h2>
     <p class="social-sub reveal">We post regularly. About nothing. It's surprisingly consistent.</p>
     <div class="social-channels reveal">
-      <a href="#" class="channel-tag">Instagram</a>
-      <a href="#" class="channel-tag">TikTok</a>
-      <a href="#" class="channel-tag">Facebook</a>
-      <a href="#" class="channel-tag">LinkedIn</a>
+      <a href="https://www.instagram.com/IG.Nothingpages" class="channel-tag" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.tiktok.com/TT.Nothingpages" class="channel-tag" target="_blank" rel="noopener">TikTok</a>
+      <a href="https://x.com/xnothingpages" class="channel-tag" target="_blank" rel="noopener">X / Twitter</a>
+      <a href="https://www.linkedin.com/company/nothingpages" class="channel-tag" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.youtube.com/@YT.Nothingpages" class="channel-tag" target="_blank" rel="noopener">YouTube</a>
     </div>
   </section>
 
@@ -529,18 +505,6 @@
   </footer>
 
   <script>
-    const cursor = document.getElementById('cursor');
-    const ring = document.getElementById('cursorRing');
-    let mx = 0, my = 0, rx = 0, ry = 0;
-    document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
-    function animCursor() {
-      cursor.style.left = mx + 'px'; cursor.style.top = my + 'px';
-      rx += (mx - rx) * 0.12; ry += (my - ry) * 0.12;
-      ring.style.left = rx + 'px'; ring.style.top = ry + 'px';
-      requestAnimationFrame(animCursor);
-    }
-    animCursor();
-
     const reveals = document.querySelectorAll('.reveal');
     const obs = new IntersectionObserver(entries => {
       entries.forEach((e, i) => {
